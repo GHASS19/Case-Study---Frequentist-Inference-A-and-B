@@ -1,6 +1,6 @@
 # Frequentist-Inference
 
-## Frequentist Inference Case Study - Part A
+## Part A
 
 1. Learning objectives
 
