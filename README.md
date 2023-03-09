@@ -1,6 +1,6 @@
 # Frequentist-Inference
 
-## Part A
+# Part A
 
 ## 1. Learning objectives
 
@@ -40,3 +40,44 @@ Having completed this project notebook, you now have hands-on experience:
 - Identifying the correct way to estimate the standard deviation of a population (the population parameter) from a sample
 - Sampling distribution and now know how the Central Limit Theorem applies
 - How to calculate critical values and confidence intervals
+
+# Part B
+
+## Hospital Medical Charges
+
+## 1. Imagine that a hospital has hired you as their data scientist. An administrator is working on the hospital's business operations plan and needs you to help them answer some business questions.
+
+## 2. In this assignment notebook, you're going to use frequentist statistical inference on a data sample to answer the questions:
+
+- Has the hospital's revenue stream fallen below a key threshold?
+- Are patients with insurance really charged different amounts than those without?
+
+
+![image](https://user-images.githubusercontent.com/86930309/223912716-d3e884c5-9baa-46cf-8042-8b2bf25f3805.png)
+
+## 3. This frequency distribution shows that a majority of the charges are below the mean and there are a few outliners that are very high at $60,000.
+
+## 4. The administrator is concerned that the actual average charge has fallen below 12,000, threatening the hospital's operational model. On the assumption that these data represent a random sample of charges, how would you justify that these data allow you to answer that question? And what would be the most appropriate frequentist test, of the ones discussed so far, to apply?
+
+Here we would use a one sided interval since we are concerned if the the average charge has fallen below a single value of 12,000. We need to t-test the assumption that the average charge has gone down below 12,000.
+
+## 5. Given the nature of the administrator's concern, what is the appropriate confidence interval in this case? A *one-sided* or *two-sided* interval? Calculate the critical value and the relevant 95% confidence interval for the mean, and comment on whether the administrator should be concerned.
+
+We need to use a one-sided interval since we are trying to find a single number, (12,000) where the true mean is greater or less than 12,000 using a 95% confidence interval.
+
+## 6. State the null and alternative hypothesis here:
+
+We are assuming that the variances of the two groups are the same. That people are charged the same with insurance and without it
+
+## 7. look through the documentation for statistical test functions in scipy.stats. You'll see the above t-test for a sample, but can you see an equivalent one for performing a z-test from a sample? Comment on your answer.
+
+A:__There is no equivalent for performing a Z-test from a sample. Z-test are for populations. A Z-test determines if two population means are not the same, the sample size is big and when we know the variances.
+
+## 8. Learning outcomes
+
+Having completed this project notebook, you now have good hands-on experience:
+
+- Using the central limit theorem to help you apply frequentist techniques to answer questions that pertain to very non-normally distributed data from the real world
+- Performing inference using such data to answer business questions
+- Forming a hypothesis and framing the null and alternative hypotheses
+- Testing this using a t-test
