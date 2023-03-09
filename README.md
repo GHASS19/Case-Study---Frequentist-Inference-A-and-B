@@ -32,7 +32,7 @@ Lets do a random trial every day for a year, calculating the mean of each daily 
 
 This is a year's worth of samples but for a sample size of 50.
 
-4. Learning outcomes
+## 4. Learning outcomes
 
 Having completed this project notebook, you now have hands-on experience:
 
